@@ -1,0 +1,103 @@
+/* .swiper-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  padding: 10%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: yellow;
+  position: relative;
+  border: 1px solid #000;
+  height: 280px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  z-index: 0;
+} */
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19) inset; */
+}
+
+.swiper-container:hover .swiper-slide,
+.swiper-container:focus .swiper-slide {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.swiper-slide .contaier {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  position: relative;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.swiper-container .contaier .bottom-box {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  /* padding: 10px; */
+  color: #fff;
+  font-family: buff;
+  height: 30%;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+}
+
+.swiper-container .contaier .bottom-box h2 {
+  border-bottom: 2px solid red;
+}
+
+.swiper-container:hover .contaier .bottom-box {
+  height: 100%;
+  background-color: rgba(255, 51, 0, 0.473);
+}
+
+.text-area {
+  display: none;
+  margin-top: 8%;
+  font-family: jarvis;
+  font-size: 15px;
+}
+
+.swiper-container:hover .contaier .bottom-box .text-area {
+  display: block;
+}
